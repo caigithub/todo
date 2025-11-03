@@ -1,165 +1,71 @@
-{
-    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-    "name": "todo",
-    "patterns": [
-        {
-            "include": "#done"
-        },
-        {
-            "include": "#action"
-        },
-        {
-            "include": "#nice"
-        },
-        {
-            "include": "#question"
-        },
-        {
-            "include": "#block"
-        },
-          {
-            "include": "#at"
-        },
-        {
-            "include": "#label"
-        }
-    ],
-    "repository": {
-        "done": {
-            "name": "comment.todo todo.done",
-            "begin": "^(\\s*)(--\\s)",
-            "end": "^(?!((\\1\\s+)|($)))",
-            "patterns": [
-                {
-                    "include": "#action"
-                },
-                {
-                    "include": "#nice"
-                },
-                {
-                    "include": "#question"
-                },
-                {
-                    "include": "#block"
-                }
-            ]
-        },
-        "question": {
-            "name": "token.warn-token.todo todo.question",
-            "begin": "^(\\s*)(\\?\\?\\s)",
-            "end": "^(?!((\\1\\s+)|($)))",
-            "patterns": [
-                {
-                    "include": "#done"
-                },
-                {
-                    "include": "#action"
-                },
-                {
-                    "include": "#nice"
-                },
-                {
-                    "include": "#block"
-                },
-                 {
-                    "include": "#at"
-                },
-                {
-                    "include": "#label"
-                }
-            ]
-        },
-        "block": {
-            "name": "token.error-token.todo todo.block",
-            "begin": "^(\\s*)(\\!\\!\\s)",
-            "end": "^(?!((\\1\\s+)|($)))",
-            "patterns": [
-                {
-                    "include": "#done"
-                },
-                {
-                    "include": "#action"
-                },
-                {
-                    "include": "#question"
-                },
-                {
-                    "include": "#nice"
-                },
-                {
-                    "include": "#at"
-                },
-                {
-                    "include": "#label"
-                }
-            ]
-        },
-        "action": {
-            "name": "token.info-token.todo todo.action",
-            "begin": "^(\\s*)(>>\\s)",
-            "end": "^(?!((\\1\\s+)|($)))",
-            "patterns": [
-                {
-                    "include": "#done"
-                },
-                {
-                    "include": "#question"
-                },
-                {
-                    "include": "#nice"
-                },
-                {
-                    "include": "#block"
-                },
-                {
-                    "include": "#at"
-                },
-                {
-                    "include": "#label"
-                }
-            ]
-        },
-        "nice": {
-            "name": "token.debug-token.todo todo.nice",
-            "begin": "^(\\s*)(\\+\\+\\s)",
-            "end": "^(?!((\\1\\s+)|($)))",
-            "patterns": [
-                {
-                    "include": "#done"
-                },
-                {
-                    "include": "#action"
-                },
-                {
-                    "include": "#question"
-                },
-                {
-                    "include": "#block"
-                },
-                {
-                    "include": "#at"
-                },
-                {
-                    "include": "#label"
-                }
-            ]
-        },
-        "at": {
-            "patterns": [
-                {
-                    "name": "entity.name.function.todo todo.at",
-                    "match": "(^|(\\s+))@\\S+"
-                }
-            ]
-        },
-        "label": {
-            "patterns": [
-                {
-                    "name": "variable.parameter.todo todo.label",
-                    "match": "(^|(\\s+))#\\S+"
-                }
-            ]
-        }
-    },
-    "scopeName": "source.todo"
-}
+
+" Quit when a syntax file was already loaded
+if exists("b:current_syntax")
+  finish
+endif
+
+"syn match dDone '^\s*-- .*$'  fold
+"syn region dDone start='^\s*-- '  end='^s*'  fold
+
+"===========================
+"regex tutorial
+"   \z(), \z1
+"       :help :syn-ext-match
+"
+"   @! 
+"       inversely match
+"       cat (dog)@!
+"       This matches instances of cat (and a trailing space) not followed by dog.
+"
+"       start="
+"               ^
+"               \z(
+"                   \s*
+"               \)
+"               .*
+"               \s
+"               @
+"               \S
+"           "  
+"
+"       end="
+"               ^
+"               \(
+"                   \(
+"                       \z1
+"                       \s\+
+"                   \)
+"                   \|
+"                   \(
+"                       $
+"                   \)
+"               \)
+"               \@!
+"           "
+"    
+"syn region dDone start="^\z(\s*\)--\s"  end="^\(\z1\s\+\)\@!"  contains=dQuestion,dBlock,dNice,dAction fold
+"
+syntax cluster status contains=todoDone,todoAction,todoQuestion,todoBlock,todoNice
+syntax cluster detail contains=todoAt,todoLabel
+
+syn region todoDone start="^\z(\s*\)--\s"  end="^\(\(\z1\s\+\)\|\($\)\)\@!"  contains=@status fold
+syn region todoNice start="^\z(\s*\)++\s"  end="^\(\(\z1\s\+\)\|\($\)\)\@!" contains=@status,@detail  fold
+syn region todoAction start='^\z(\s*\)>>\s' end="^\(\(\z1\s\+\)\|\($\)\)\@!" contains=@status,@detail fold
+syn region todoQuestion start="^\z(\s*\)??\s"  end="^\(\(\z1\s\+\)\|\($\)\)\@!" contains=@status,@detail fold
+syn region todoBlock start="^\z(\s*\)!!\s"  end="^\(\(\z1\s\+\)\|\($\)\)\@!" contains=@status,@detail fold
+
+syn match todoAt '\(\s\|^\)@\S*' fold
+syn match todoLabel '\(\s\|^\)#\S*' fold
+
+"syn match dSeperate '^\s*====.*$' contains=@detail fold
+
+"======================================
+" The default highlighting.
+"
+hi def todoDone 	            guifg=Gray50
+hi def todoBlock 	            guifg=Red
+hi def todoQuestion             guifg=goldenrod
+hi def todoNice 	            guifg=#2b2bf4
+hi def todoAction               guifg=CornflowerBlue
+hi def todoAt               guifg=SeaGreen
+hi def todoLabel              guifg=magenta1
