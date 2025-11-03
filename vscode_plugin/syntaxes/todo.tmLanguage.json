@@ -1,4 +1,3 @@
-
 " Quit when a syntax file was already loaded
 if exists("b:current_syntax")
   finish
@@ -12,7 +11,7 @@ endif
 "   \z(), \z1
 "       :help :syn-ext-match
 "
-"   @! 
+"   @!
 "       inversely match
 "       cat (dog)@!
 "       This matches instances of cat (and a trailing space) not followed by dog.
@@ -26,7 +25,7 @@ endif
 "               \s
 "               @
 "               \S
-"           "  
+"           "
 "
 "       end="
 "               ^
@@ -42,7 +41,7 @@ endif
 "               \)
 "               \@!
 "           "
-"    
+"
 "syn region dDone start="^\z(\s*\)--\s"  end="^\(\z1\s\+\)\@!"  contains=dQuestion,dBlock,dNice,dAction fold
 "
 syntax cluster status contains=todoDone,todoAction,todoQuestion,todoBlock,todoNice
@@ -67,5 +66,5 @@ hi def todoBlock 	            guifg=Red
 hi def todoQuestion             guifg=goldenrod
 hi def todoNice 	            guifg=#2b2bf4
 hi def todoAction               guifg=CornflowerBlue
-hi def todoAt               guifg=SeaGreen
-hi def todoLabel              guifg=magenta1
+hi def todoAt                   guifg=SeaGreen
+hi def todoLabel                guifg=magenta1
