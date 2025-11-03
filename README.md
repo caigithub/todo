@@ -10,9 +10,9 @@ you will get a visual feedback immediatley, no editor/viewer needed.
 ## use it in vim
 ### install
 - download repo
-- copy ./vim/* to <vimfiles>/*
+- copy ./vim/* to \<your_vimfiles\>/*
 ### customization
-- modify the <vimfiles>/syntax/todo.vim
+- modify the \<your_vimfiles\>/syntax/todo.vim
 ```
 hi def todoDone               guifg=Gray50
 hi def todoBlock              guifg=Red
