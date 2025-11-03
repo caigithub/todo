@@ -9,7 +9,7 @@
             "include": "#action"
         },
         {
-            "include": "#enhance"
+            "include": "#nice"
         },
         {
             "include": "#question"
@@ -21,7 +21,7 @@
             "include": "#at"
         },
         {
-            "include": "#context"
+            "include": "#label"
         }
     ],
     "repository": {
@@ -34,7 +34,7 @@
                     "include": "#action"
                 },
                 {
-                    "include": "#enhance"
+                    "include": "#nice"
                 },
                 {
                     "include": "#question"
@@ -56,7 +56,7 @@
                     "include": "#action"
                 },
                 {
-                    "include": "#enhance"
+                    "include": "#nice"
                 },
                 {
                     "include": "#block"
@@ -65,7 +65,7 @@
                     "include": "#at"
                 },
                 {
-                    "include": "#context"
+                    "include": "#label"
                 }
             ]
         },
@@ -84,13 +84,13 @@
                     "include": "#question"
                 },
                 {
-                    "include": "#enhance"
+                    "include": "#nice"
                 },
                 {
                     "include": "#at"
                 },
                 {
-                    "include": "#context"
+                    "include": "#label"
                 }
             ]
         },
@@ -106,7 +106,7 @@
                     "include": "#question"
                 },
                 {
-                    "include": "#enhance"
+                    "include": "#nice"
                 },
                 {
                     "include": "#block"
@@ -115,12 +115,12 @@
                     "include": "#at"
                 },
                 {
-                    "include": "#context"
+                    "include": "#label"
                 }
             ]
         },
-        "enhance": {
-            "name": "token.debug-token.todo todo.enhance",
+        "nice": {
+            "name": "token.debug-token.todo todo.nice",
             "begin": "^(\\s*)(\\+\\+\\s)",
             "end": "^(?!((\\1\\s+)|($)))",
             "patterns": [
@@ -140,22 +140,22 @@
                     "include": "#at"
                 },
                 {
-                    "include": "#context"
+                    "include": "#label"
                 }
             ]
         },
         "at": {
             "patterns": [
                 {
-                    "name": "entity.name.function.todo todo.who",
+                    "name": "entity.name.function.todo todo.at",
                     "match": "(^|(\\s+))@\\S+"
                 }
             ]
         },
-        "context": {
+        "label": {
             "patterns": [
                 {
-                    "name": "variable.parameter.todo todo.context",
+                    "name": "variable.parameter.todo todo.label",
                     "match": "(^|(\\s+))#\\S+"
                 }
             ]
