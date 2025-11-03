@@ -1,0 +1,165 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "todo",
+    "patterns": [
+        {
+            "include": "#done"
+        },
+        {
+            "include": "#action"
+        },
+        {
+            "include": "#enhance"
+        },
+        {
+            "include": "#question"
+        },
+        {
+            "include": "#block"
+        },
+          {
+            "include": "#at"
+        },
+        {
+            "include": "#context"
+        }
+    ],
+    "repository": {
+        "done": {
+            "name": "comment.todo todo.done",
+            "begin": "^(\\s*)(--\\s)",
+            "end": "^(?!((\\1\\s+)|($)))",
+            "patterns": [
+                {
+                    "include": "#action"
+                },
+                {
+                    "include": "#enhance"
+                },
+                {
+                    "include": "#question"
+                },
+                {
+                    "include": "#block"
+                }
+            ]
+        },
+        "question": {
+            "name": "token.warn-token.todo todo.question",
+            "begin": "^(\\s*)(\\?\\?\\s)",
+            "end": "^(?!((\\1\\s+)|($)))",
+            "patterns": [
+                {
+                    "include": "#done"
+                },
+                {
+                    "include": "#action"
+                },
+                {
+                    "include": "#enhance"
+                },
+                {
+                    "include": "#block"
+                },
+                 {
+                    "include": "#at"
+                },
+                {
+                    "include": "#context"
+                }
+            ]
+        },
+        "block": {
+            "name": "token.error-token.todo todo.block",
+            "begin": "^(\\s*)(\\!\\!\\s)",
+            "end": "^(?!((\\1\\s+)|($)))",
+            "patterns": [
+                {
+                    "include": "#done"
+                },
+                {
+                    "include": "#action"
+                },
+                {
+                    "include": "#question"
+                },
+                {
+                    "include": "#enhance"
+                },
+                {
+                    "include": "#at"
+                },
+                {
+                    "include": "#context"
+                }
+            ]
+        },
+        "action": {
+            "name": "token.info-token.todo todo.action",
+            "begin": "^(\\s*)(>>\\s)",
+            "end": "^(?!((\\1\\s+)|($)))",
+            "patterns": [
+                {
+                    "include": "#done"
+                },
+                {
+                    "include": "#question"
+                },
+                {
+                    "include": "#enhance"
+                },
+                {
+                    "include": "#block"
+                },
+                {
+                    "include": "#at"
+                },
+                {
+                    "include": "#context"
+                }
+            ]
+        },
+        "enhance": {
+            "name": "token.debug-token.todo todo.enhance",
+            "begin": "^(\\s*)(\\+\\+\\s)",
+            "end": "^(?!((\\1\\s+)|($)))",
+            "patterns": [
+                {
+                    "include": "#done"
+                },
+                {
+                    "include": "#action"
+                },
+                {
+                    "include": "#question"
+                },
+                {
+                    "include": "#block"
+                },
+                {
+                    "include": "#at"
+                },
+                {
+                    "include": "#context"
+                }
+            ]
+        },
+        "at": {
+            "patterns": [
+                {
+                    "name": "entity.name.function.todo todo.who",
+                    "match": "(^|(\\s+))@\\S+"
+                }
+            ]
+        },
+        "context": {
+            "patterns": [
+                {
+                    "name": "variable.parameter.todo todo.context",
+                    "match": "(^|(\\s+))#\\S+"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.todo"
+}
