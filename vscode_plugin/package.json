@@ -1,0 +1,35 @@
+{
+	"name": "todo",
+	"displayName": "todo",
+	"description": "todo",
+	"version": "0.0.14",
+	"publisher": "colinkaopu",
+	"engines": {
+		"vscode": "^1.15.0"
+	},
+	"categories": [
+		"Programming Languages"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "todo",
+				"aliases": [
+					"todo",
+					"todo"
+				],
+				"extensions": [
+					".todo"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "todo",
+				"scopeName": "source.todo",
+				"path": "./syntaxes/todo.tmLanguage.json"
+			}
+		]
+	}
+}
