@@ -16,21 +16,62 @@ download repo
 copy ./vim/* to <vimfiles>/*
 ### customization
 modify the <vimfiles>/syntax/todo.vim
-hi def todoDone 	            guifg=Gray50
-hi def todoBlock 	            guifg=Red
+```
+hi def todoDone               guifg=Gray50
+hi def todoBlock              guifg=Red
 hi def todoQuestion           guifg=goldenrod
-hi def todoNice 	            guifg=#2b2bf4
+hi def todoNice               guifg=#2b2bf4
 hi def todoAction             guifg=CornflowerBlue
 hi def todoAt                 guifg=SeaGreen
 hi def todoLabel              guifg=magenta1
+```
 ## use it in vscode 
 ### install
 search colinkaopu d to install the plugin
 ### customize
-
+in the settings.json
+```
     "editor.tokenColorCustomizations": {
         "textMateRules": [
-              
-
+            //==========================
+            // todo.d
+            //
+            {
+                "scope": "todo.done",
+                "settings": {
+                    "foreground": "#FF0000"
+                }
+            },
+            {
+                "scope": "todo.question",
+                "settings": {
+                    "foreground": "#FF0000"
+                }
+            },
+            {
+                "scope": "todo.action",
+                "settings": {
+                    "foreground": "#FF0000"
+                }
+            },
+            {
+                "scope": "todo.nice",
+                "settings": {
+                    "foreground": "#FF0000"
+                }
+            },
+            {
+                "scope": "todo.at",
+                "settings": {
+                    "foreground": "#FF0000"
+                }
+            },
+            {
+                "scope": "todo.label",
+                "settings": {
+                    "foreground": "#FF0000"
+                }
+            }
         ]
     },
+```
