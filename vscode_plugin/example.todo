@@ -1,0 +1,46 @@
+
+===========================
+test example :
+
+    -- finished
+        ?? question
+        question ??
+        ?? question ??
+        ++ nice to have
+        !! block
+        >> todo
+            also finished
+
+>> dfadsfsafsadf @dfdfd
+-- adsfsdfsadfasfda @aaa 
+    fsdfsdfsafsaf -- begin
+    fsdfsdfsafsaf @aaa
+    ?? xxxxxxxxxxx @aaa
+        xxxxxxx ?? begin
+        fffffffffffffff @aaa
+        !! dddddddddddddddd @aaa #xxx
+            dddddddddddd !! begin #xxx
+            ffffffffffff @aaa #xxx
+                ++ fdsafsafsafsafds @aaa
+                    fasfdsfsfsafd ++ begin
+                    fasfdsfsfsafd @aaa
+                    fasfdsfsfsafd ++ end
+            dddddddddddd !! end
+        xxxxxxx ?? end
+    fsdfsdfsafsaf -- end
+
+normal text
+
+ffffffffffff @aaa
+    aaaaa
+    bbbb
+
+@aaa xxxxxx
+    aaaa
+    bbbb
+
+===========================
+coming functions:
+
+-- support @xxx
+define colors in the language
