@@ -10,23 +10,7 @@ use plain text to mark the task status
   - you will get a visual feedback immediatley, no editor/viewer needed.
 - screenshot
 <img width="828" height="705" alt="image" src="https://github.com/user-attachments/assets/f27e6364-7d6a-48a8-a782-66c9693ebb0e" />
- 
-## use it in vim
-### install
-- download repo
-- copy \<repo\>/vim/* to \<your_vimfiles\>/*
-### customize style
-- modify the \<your_vimfiles\>/syntax/todo.vim
-```
-hi def todoDone               guifg=Gray50
-hi def todoBlock              guifg=Red
-hi def todoQuestion           guifg=goldenrod
-hi def todoNice               guifg=#2b2bf4
-hi def todoAction             guifg=CornflowerBlue
-hi def todoAt                 guifg=SeaGreen
-hi def todoLabel              guifg=magenta1
-```
-## use it in vscode 
+ ## use it in vscode 
 ### install
 - search colinkaopu d to install the plugin
 ### customize style
@@ -72,4 +56,19 @@ hi def todoLabel              guifg=magenta1
             }
         ]
     },
+```
+## use it in vim
+### install
+- download repo
+- copy \<repo\>/vim/* to \<your_vimfiles\>/*
+### customize style
+- modify the \<your_vimfiles\>/syntax/todo.vim
+```
+hi def todoDone               guifg=Gray50
+hi def todoBlock              guifg=Red
+hi def todoQuestion           guifg=goldenrod
+hi def todoNice               guifg=#2b2bf4
+hi def todoAction             guifg=CornflowerBlue
+hi def todoAt                 guifg=SeaGreen
+hi def todoLabel              guifg=magenta1
 ```
