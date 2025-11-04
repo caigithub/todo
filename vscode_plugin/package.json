@@ -1,18 +1,18 @@
 {
-	"name": "todo",
-	"displayName": "todo",
-	"description": "todo",
-	"version": "0.0.14",
-	"publisher": "colinkaopu",
-	"engines": {
-		"vscode": "^1.15.0"
-	},
-	"categories": [
-		"Programming Languages"
-	],
-	"contributes": {
-		"languages": [
-			{
+    "name": "d",
+    "displayName": "d",
+    "description": "use plain txt to mark task status",
+    "version": "0.0.14",
+    "publisher": "colinkaopu",
+    "engines": {
+        "vscode": "^1.15.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
 				"id": "todo",
 				"aliases": [
 					"todo",
@@ -22,14 +22,14 @@
 					".todo"
 				],
 				"configuration": "./language-configuration.json"
-			}
-		],
-		"grammars": [
-			{
+            }
+        ],
+        "grammars": [
+            {
 				"language": "todo",
 				"scopeName": "source.todo",
 				"path": "./syntaxes/todo.tmLanguage.json"
-			}
-		]
-	}
+            }
+        ]
+    }
 }
