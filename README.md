@@ -13,8 +13,8 @@
 ## use it in vim
 ### install
 - download repo
-- copy ./vim/* to \<your_vimfiles\>/*
-### customization
+- copy \<repo\>/vim/* to \<your_vimfiles\>/*
+### customize style
 - modify the \<your_vimfiles\>/syntax/todo.vim
 ```
 hi def todoDone               guifg=Gray50
@@ -28,14 +28,11 @@ hi def todoLabel              guifg=magenta1
 ## use it in vscode 
 ### install
 - search colinkaopu d to install the plugin
-### customize
+### customize style
 - in the settings.json
 ```
     "editor.tokenColorCustomizations": {
         "textMateRules": [
-            //==========================
-            // todo.d
-            //
             {
                 "scope": "todo.done",
                 "settings": {
