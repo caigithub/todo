@@ -8,13 +8,28 @@ use plain text to mark the task status
 - syntax highlight
   - use editor's syntax highlight to provide color.
   - you will get a visual feedback immediatley, no editor/viewer needed.
+## feature
+- begin a line with follow syntax :
+```
+    --<space>
+        it will highlight the current block as done-style
+    !!<space>
+        it will highlight the current block as block-style
+    ??<space>
+        it will highlight the current block as question-style
+    >><space>
+        it will highlight the current line as action-style
+    ++<space>
+        it will highlight the current block as nice-to-have-style
+```
 - screenshot
 <img width="828" height="705" alt="image" src="https://github.com/user-attachments/assets/f27e6364-7d6a-48a8-a782-66c9693ebb0e" />
- ## use it in vscode 
+
+## use it in vscode 
 ### install
 - search colinkaopu d to install the plugin
 ### customize style
-- in the settings.json
+- in the settings.json, add following sections
 ```
     "editor.tokenColorCustomizations": {
         "textMateRules": [
