@@ -23,7 +23,7 @@ use plain text to mark the task status
         it will highlight the current block as nice-to-have-style
 ```
 - screenshot
-<img width="828" height="705" alt="image" src="https://github.com/user-attachments/assets/f27e6364-7d6a-48a8-a782-66c9693ebb0e" />
+<img width="828" height="705" alt="image" src="https://github.com/caigithub/todo/blob/main/vscode_plugin/screenshot.png" />
 
 ## use it in vscode 
 ### install
