@@ -7,6 +7,8 @@
   use editor's syntax highlight to provide color.
   you will get a visual feedback immediatley, no editor/viewer needed.
 - screenshot
+<img width="828" height="705" alt="image" src="https://github.com/user-attachments/assets/f27e6364-7d6a-48a8-a782-66c9693ebb0e" />
+
   
 ## use it in vim
 ### install
