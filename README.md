@@ -1,9 +1,9 @@
 ## introduction
-- plan text !!
+- plan text
   - use plain text to describe the task.
   - add meaningful syntax to indidate the status of the task.
   - you can use any editor to modify.
-- syntax highlight !!
+- syntax highlight
   - use editor's syntax highlight to provide color.
   - you will get a visual feedback immediatley, no editor/viewer needed.
 - screenshot
