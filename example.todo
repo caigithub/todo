@@ -1,0 +1,27 @@
+
+------------------
+usage : add symbols to the line begin
+
+    normal text
+    -- finished task
+    !! something blocked
+    ?? i have question
+    ++ nice to have
+    >> going to take action
+
+------------------
+example :
+
+    create a todo app
+        -- learn
+            html
+            css
+            javasript
+        coding
+            ?? found something intesering, but i can still go going
+            !! get a problem, cannot processedd
+                -- tried solution 1, fained
+                >> try solution 2
+                solution 3
+                solution 4
+            ++ a new feature, can enhance it later
