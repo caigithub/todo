@@ -27,7 +27,7 @@ use plain text to mark the task status
 
 ## use it in vscode 
 ### install
-- search colinkaopu d to install the plugin
+- search colinkaopu d to install the plugin : https://marketplace.visualstudio.com/items?itemName=colinkaopu.d
 ### customize style
 - in the settings.json, add following sections
 ```
