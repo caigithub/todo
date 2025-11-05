@@ -1,7 +1,11 @@
 # d README
 
 ## introduction
-use plain text to mark the task status
+- i create a new file type *.todo.
+- use plain text to mark the task status in *.todo files
+- *.d is NOT supported
+- *.td is NOT supported
+
 ## overview
 - plan text
   - use plain text to describe the task.
@@ -25,7 +29,7 @@ use plain text to mark the task status
         it will highlight the current block as nice-to-have-style
 ```
 - screenshot
-![screenshot.png](https://github.com/caigithub/todo/blob/main/vscode_plugin/screenshot.png)\)
+![screenshot.png](https://github.com/caigithub/todo/blob/main/vscode_plugin/screenshot.png)
 
 ## reference
 - github        : https://github.com/caigithub/todo/tree/main
