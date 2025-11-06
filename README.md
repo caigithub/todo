@@ -11,15 +11,15 @@ To migrate, simply **rename** your files to **.todo** extension.
 - begin a line with follow syntax :
 ```
     --<space>
-        it will highlight the current block as done-style
+        it will highlight the **block** as done-style
     !!<space>
-        it will highlight the current block as block-style
+        it will highlight the **block** as block-style
     ??<space>
-        it will highlight the current block as question-style
+        it will highlight the **block** as question-style
     >><space>
-        it will highlight the current line as action-style
+        it will highlight the **line** as action-style
     ++<space>
-        it will highlight the current block as nice-to-have-style
+        it will highlight the **block** as nice-to-have-style
 ```
 ## use it in vscode 
 ### install
