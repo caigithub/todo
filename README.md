@@ -3,7 +3,7 @@
 You can edit it with any text editor, and **syntax highlighting** provides instant visual feedback. 
 
 PS: The previous extensions ***.d** and ***.td** no longer supported.  
-To migrate, simply **rename** your files to **.todo** extension.
+To migrate, simply **rename** your files to ***.todo** extension.
 
 <img width="828" height="705" alt="image" src="https://github.com/caigithub/todo/blob/main/vscode_plugin/screenshot.png" />
 
