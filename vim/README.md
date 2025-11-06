@@ -12,3 +12,7 @@ hi def todoAction             guifg=CornflowerBlue
 hi def todoAt                 guifg=SeaGreen
 hi def todoLabel              guifg=magenta1
 ```
+## reference
+- github repo               : https://github.com/caigithub/todo/tree/main
+- vscode plugin support     : https://github.com/caigithub/todo/tree/main/vscode_plugin
+- vim support               : https://github.com/caigithub/todo/tree/main/vim
