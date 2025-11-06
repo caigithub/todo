@@ -22,11 +22,54 @@ To migrate, simply **rename** your files to **.todo** extension.
     ++<space>
         it will highlight the **block** as nice-to-have-style
 ```
-
+## customize style
+- in the settings.json, add following sections
+```
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "todo.done",
+                "settings": {
+                    "foreground": "#FF0000"
+                }
+            },
+            {
+                "scope": "todo.question",
+                "settings": {
+                    "foreground": "#FF0000"
+                }
+            },
+            {
+                "scope": "todo.action",
+                "settings": {
+                    "foreground": "#FF0000"
+                }
+            },
+            {
+                "scope": "todo.nice",
+                "settings": {
+                    "foreground": "#FF0000"
+                }
+            },
+            {
+                "scope": "todo.at",
+                "settings": {
+                    "foreground": "#FF0000"
+                }
+            },
+            {
+                "scope": "todo.label",
+                "settings": {
+                    "foreground": "#FF0000"
+                }
+            }
+        ]
+    },
+```
 ## reference
-- github        : https://github.com/caigithub/todo/tree/main
-- customize style in vscode : https://github.com/caigithub/todo/tree/main?tab=readme-ov-file#customize-style
-- vim support   : https://github.com/caigithub/todo/tree/main?tab=readme-ov-file#use-it-in-vim
+- github repo               : https://github.com/caigithub/todo/tree/main
+- vscode plugin support     : https://github.com/caigithub/todo/tree/main/vscode_plugin
+- vim support               : https://github.com/caigithub/todo/tree/main/vim
 
 
 
