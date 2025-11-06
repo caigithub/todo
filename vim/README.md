@@ -1,7 +1,7 @@
-### install
+## install
 - download repo
 - copy \<repo\>/vim/* to \<your_vimfiles\>/*
-### customize style
+## customize style
 - modify the \<your_vimfiles\>/syntax/todo.vim
 ```
 hi def todoDone               guifg=Gray50
