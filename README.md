@@ -1,14 +1,11 @@
 ## introduction
-use plain text to mark the task status
-## overview
-- plan text
-  - use plain text to describe the task.
-  - add meaningful syntax to indidate the status of the task.
-  - you can use any editor to modify.
-- syntax highlight
-  - use editor's syntax highlight to provide color.
-  - you will get a visual feedback immediatley, no editor/viewer needed.
-## feature
+***.todo** is a **plain text** format that uses **self-defined symbols** to indicate **task status**.
+You can edit it with any text editor, and **syntax highlighting** provides instant visual feedback.
+
+The previous extensions ***.d** and ***.td** no longer supported.
+To migrate, simply **rename** your files to **.todo** extension.
+
+## usage
 - begin a line with follow syntax :
 ```
     --<space>
