@@ -5,7 +5,7 @@ You can edit it with any text editor, and **syntax highlighting** provides insta
 PS: The previous extensions ***.d** and ***.td** no longer supported.  
 To migrate, simply **rename** your files to ***.todo** extension.
 
-<img width="828" height="705" alt="image" src="https://github.com/caigithub/todo/blob/main/vscode_plugin/screenshot.png" />
+![screenshot](https://raw.githubusercontent.com/caigithub/todo/refs/heads/main/vscode_plugin/screenshot.png)
 
 ## usage
 - begin a line with follow syntax :
