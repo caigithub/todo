@@ -2,7 +2,7 @@
     "name": "d",
     "displayName": "d",
     "description": "use plain txt to mark task status",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "publisher": "colinkaopu",
     "engines": {
         "vscode": "^1.15.0"
